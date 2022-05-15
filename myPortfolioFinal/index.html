@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- linking css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+        <div class="container">
+            <a class="navbar-brand"  href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quotes">Quotes</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                    <h2 class="hero_title"></h2>
+                    <p class="hero_desc">I am an Intern at CGInfinity </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="https://st2.depositphotos.com/1006318/5909/v/950/depositphotos_59095529-stock-illustration-profile-icon-male-avatar.jpg" class="imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                    <p>Hi, I am Shaurya Sethi. I am from Chandigarh. <span class="my-DOB"></span><br/>I am an Intern at 
+CG Infinity and currently learning new technologies such as Salesforce and Web development etc. 
+                    </p>
+                  
+                    <div class="row mt-3">
+                        <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                            survived not only five centuries, but also the leap into electronic typesetting, remaining
+                            essentially unchanged.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                            survived not only five centuries, but also the leap into electronic typesetting, remaining
+                            essentially unchanged.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- skills -->
+    <section id="skills" class="skills section-bg">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Skills</h2>
+                <p>
+                    Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+                    ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+                    quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                    Quia fugiat sit in iste officiis commodi quidem hic quas.
+                </p>
+            </div>
+
+            <div class="row skills-content">
+                <div class="col-lg-6">
+                    <div class="progress">
+                        <span class="skill">HTML <i class="val">100%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <span class="skill">CSS <i class="val">90%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <span class="skill">JavaScript <i class="val">75%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="progress">
+                        <span class="skill">C/C++ <i class="val">80%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <span class="skill">SQL <i class="val">90%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <span class="skill">Java <i class="val">55%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonials section-->
+    <section id="testimonials">
+        <div class="container">
+            <h1 class="text-center">Testimonials</h1>
+            <div class="row row-1-cards">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <img src="#" alt="avatar" class="testimonial-avatar-0"/>
+                            <h4 class="card-title mt-3 testimonial-position-0">Website Development</h4>
+                            <p class="card-text mt-3 testimonial-description-0">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <img src="#" alt="avatar" class="testimonial-avatar-1"/>
+                            <h4 class="card-title mt-3 testimonial-position-1">Website Development</h4>
+                            <p class="card-text mt-3 testimonial-description-1">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <img src="#" alt="avatar" class="testimonial-avatar-2"/>
+                            <h4 class="card-title mt-3 testimonial-position-2">Website Development</h4>
+                            <p class="card-text mt-3 testimonial-description-2">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                             <img src="#" alt="avatar" class="testimonial-avatar-3"/>
+                            <h4 class="card-title mt-3 testimonial-position-3">Website Development</h4>
+                            <p class="card-text mt-3 testimonial-description-3">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <img src="#" alt="avatar" class="testimonial-avatar-4"/>
+                            <h4 class="card-title mt-3 testimonial-position-4">Website Development</h4>
+                            <p class="card-text mt-3 testimonial-description-4">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <img src="#" alt="avatar" class="testimonial-avatar-5"/>
+                            <h4 class="card-title mt-3 testimonial-position-5">Website Development</h4>
+                            <p class="card-text mt-3 testimonial-description-5">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://images.unsplash.com/photo-1598791318878-10e76d178023?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dG8lMjBkbyUyMGxpc3R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">To Do list</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <div class="text-center">
+                                <a href="https://clever-chandrasekhar-97d67c.netlify.app/" target="_blank" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="https://images.unsplash.com/photo-1530563885674-66db50a1af19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2VhdGhlciUyMGFwcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Weather App</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <div class="text-center">
+                                <a href="https://flamboyant-heisenberg-128dd6.netlify.app" target="blank" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdW1lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">My Portfolio</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <div class="text-center">
+                                <a href="https://condescending-williams-98001d.netlify.app" target="_blank" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2hvcHBpbmclMjBjYXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Shopping App</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <div class="text-center">
+                                <a href="https://distracted-jepsen-919952.netlify.app/"target="blank" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="data:image/png;base64,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" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Phonebook</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <div class="text-center">
+                                <a href="https://boring-curie-700814.netlify.app"target="blank" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="data:image/png;base64,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" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Email-Notifier App</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <div class="text-center">
+                                <a href="https://emailnotifier1234.herokuapp.com/"target="blank" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- A quote -->
+    <section id="quotes"><div class="card">
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>loading...</p>
+            <footer class="blockquote-footer">
+              <cite title="Source Title"></cite>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-primary fetch-new-quote">New Quote</div>
+        </div>
+      </div></section>
+
+
+    <!-- contact section-->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                    <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;">
+                        <div id="gmapcanvas" style="height:100%; width:100%;max-width:100%;"><iframe
+                                style="height:100%;width:100%;border:0;" frameborder="0"
+                                src="https://www.google.com/maps/embed/v1/place?q=pinacle+Business++park,+noida&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                        </div><a class="googlemaps-code" href="https://www.embed-map.com"
+                            id="injectmap-data">https://www.embed-map.com</a>
+                        <style>
+                            #gmapcanvas img {
+                                max-width: none !important;
+                                background: none !important;
+                                font-size: inherit;
+                                font-weight: inherit;
+                            }
+                        </style>
+                    </div>
+                </div>
+
+                 <div class="col-lg-6">
+                    <!-- form fields -->
+                    <form>
+                        <input type="text" class="form-control form-control-lg" required placeholder="Name">
+                        <input type="email" class="form-control mt-3" required placeholder="Email">
+                        <input type="text" class="form-control mt-3" required placeholder="Subject">
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text" required
+                                placeholder="Project Details"></textarea>
+                        </div>
+                        <button type="submit" id="toggleModal" class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModalCenter">Contact Me</button>
+                    </form>
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- footer section-->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+            </div>
+        </div>
+    </footer>
+
+     <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    I have received your details and will contact you shortly
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="toggleModal" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- load javascript after loading all html content -->
+    <script src="script/waypoints/noframework.waypoints.js"></script>
+    <script src="script/script.js"></script>
+
+
+
+</body>
+
+</html>
